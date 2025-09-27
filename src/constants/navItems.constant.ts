@@ -36,14 +36,17 @@ export const heroIcons = [
   {
     id: 1,
     icon: RiLinkedinFill,
+    href:"https://www.linkedin.com/in/ravindu-kandawela-9a64552a5/"
   },
   {
     id: 2,
     icon: RiFacebookBoxFill,
+    href:"https://www.facebook.com/ravindu.lakshan.7923030/"
   },
   {
     id: 3,
     icon: RiGithubFill,
+    href:"https://github.com/ravindu-kandawela1205"
   },
 ];
 
