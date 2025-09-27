@@ -1,3 +1,7 @@
+import First from '../assets/Images/p1.jpg';
+import Animted from '../assets/Images/p2.jpg';
+import Prot from '../assets/Images/p3.png';
+
 import {
   RiFacebookBoxFill,
   RiGithubFill,
@@ -116,26 +120,26 @@ export const ResumeItems = [
 export const ProjectsItems = [
   {
     id: 1,
-    title: "Porfolio 1",
-    src: "/images/portfolio-1.png",
+    title: "first-website",
+    src: First,
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur temporibus asperiores, quia adipisci repellendus",
   },
   {
     id: 2,
-    title: "Porfolio 2",
-    src: "/images/portfolio-2.png",
+    title: "Animated-website",
+    src: Animted,
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur temporibus asperiores, quia adipisci repellendus",
   },
   {
     id: 3,
-    title: "Porfolio 3",
-    src: "/images/portfolio-3.png",
+    title: "Porfolio",
+    src: Prot,
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur temporibus asperiores, quia adipisci repellendus",
   },
   {
     id: 4,
     title: "Porfolio 4",
-    src: "/images/portfolio-4.png",
+    src:"",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur temporibus asperiores, quia adipisci repellendus",
   },
 ];
