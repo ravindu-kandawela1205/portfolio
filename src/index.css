@@ -1,0 +1,65 @@
+/* Google font */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --color-primary-clr: #58e0bb;
+  --color-secondary-clr: #121b21;
+  --color-bgClr: #0e1419;
+
+  /* Typographey */
+  --font-dmSans: 'DM Sans', sans-serif;
+}
+
+html {
+  @apply scroll-smooth;
+}
+
+body {
+  @apply bg-bgClr font-dmSans text-white;
+}
+
+@layer utilities {
+  .container {
+    @apply mx-auto px-4 md:px-8 lg:px-12 2xl:max-w-screen-xl;
+  }
+  p {
+    @apply text-sm text-neutral-400 sm:text-base md:text-lg;
+  }
+  .section {
+    @apply py-28 lg:py-36;
+  }
+  h2 {
+    @apply text-2xl font-semibold lg:text-4xl;
+  }
+  .input {
+    @apply h-12 w-full border border-neutral-800 py-2 indent-4;
+  }
+  button {
+    @apply cursor-pointer;
+  }
+}
+
+@layer components {
+  .primary-btn {
+    @apply border border-white bg-white px-8 py-3 font-semibold tracking-wider text-black transition-colors hover:bg-transparent hover:text-white active:bg-white/10;
+  }
+  .secondary-btn {
+    @apply border border-white px-8 py-3 font-semibold tracking-wider text-white transition-colors hover:bg-white hover:text-black active:bg-white/70;
+  }
+}
+
+/* Header */
+.header {
+  @apply fixed top-0 left-0 z-30 w-full py-5 transition-colors;
+}
+
+.header.active {
+  @apply bg-secondary-clr shadow-xs shadow-white/15;
+}
+
+/* header  */
+
+.header {
+  @apply fixed top-0 left-0 z-30  w-full py-5;
+}
