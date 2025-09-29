@@ -4,7 +4,7 @@ import { useState, useRef, useId, useEffect } from "react";
 
 interface SlideData {
   title: string;
-  button: string;
+  button?: string;
   src: string;
 }
 
@@ -20,7 +20,7 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
 
   const xRef = useRef(0);
   const yRef = useRef(0);
-  const frameRef = useRef<number>();
+  const frameRef = useRef<number | null>(null);
 
   useEffect(() => {
     const animate = () => {
@@ -38,7 +38,7 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
     frameRef.current = requestAnimationFrame(animate);
 
     return () => {
-      if (frameRef.current) {
+      if (frameRef.current !== null) {
         cancelAnimationFrame(frameRef.current);
       }
     };
@@ -62,7 +62,7 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
     event.currentTarget.style.opacity = "1";
   };
 
-  const { src, button, title } = slide;
+  const { src, button = "View Project", title } = slide;
 
   return (
     <div className="[perspective:1200px] [transform-style:preserve-3d]">

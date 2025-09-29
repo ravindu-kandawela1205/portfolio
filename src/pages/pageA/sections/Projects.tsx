@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { Carousel } from '../../../components/ui/carousel';
 import { ProjectsItems } from '../../../constants/navItems.constant';
 function Projects() {

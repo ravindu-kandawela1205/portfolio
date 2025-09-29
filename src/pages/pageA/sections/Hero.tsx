@@ -1,4 +1,4 @@
-import React from 'react';
+
 import Ravindu from '../../../assets/Images/ravindu.png';
 import { heroIcons } from '../../../constants/navItems.constant';
 import Button from '../../../components/Buttons/Button';
