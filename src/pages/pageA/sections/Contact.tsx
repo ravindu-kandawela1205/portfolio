@@ -4,7 +4,7 @@ import { li } from 'motion/react-client';
 import { RiLinkedinBoxFill, RiGithubFill } from '@remixicon/react';
 function Contact() {
   return (
-    <section className='py-20'>
+    <section className='py-20' id='contact'>
       <div className="container grid gap-10 md:grid-cols-2 md:divide-x md:divide-neutral-800">
         {/* content  */}
 

@@ -3,17 +3,22 @@ import Ravindu from '../../../assets/Images/ravindu.png';
 import Ravinduv2 from '../../../assets/Images/ravinduv2.jpg';
 import { heroIcons } from '../../../constants/navItems.constant';
 import Button from '../../../components/Buttons/Button';
-import { BackgroundGradient } from '../../../components/ui/BackgroundGradient ';   
+import { BackgroundGradient } from '../../../components/ui/BackgroundGradient '; 
+
+import { motion } from 'motion/react';
+import { staggerContainer } from '../../../motion/animation';
+
 function Hero() {
   return (
-    <section className='py-28 lg:pt-40'>
-      <div className="container flex flex-col items-center">
+    <section className='py-28 lg:pt-40' id='home'>
+      <motion.div variants={staggerContainer} initial='hidden' whileInView='show' viewport={{once:true}} className="container flex flex-col items-center">
         
         {/* image */}
+        <motion.div>
         <BackgroundGradient className="w-72 h-72 lg:w-80 lg:h-80 rounded-full overflow-hidden bg-zinc-900">
           <img src={Ravindu} alt="ravindu" className="w-full h-full object-cover" />
         </BackgroundGradient>
-        
+        </motion.div>
         {/* content  */}
 
         <div className='text-center mt-8 '>
@@ -38,7 +43,7 @@ function Hero() {
             </div>
         </div>
 
-      </div>
+      </motion.div>
     </section>
   )
 }

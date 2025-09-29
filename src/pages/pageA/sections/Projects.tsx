@@ -3,8 +3,8 @@ import { Carousel } from '../../../components/ui/carousel';
 import { ProjectsItems } from '../../../constants/navItems.constant';
 function Projects() {
   return (
-    <section>
-      <div className="container">
+    <section className='section' id='projects'>
+      <div className="container" >
         {/* title  */}
 
         <h2>Recent Projects</h2>

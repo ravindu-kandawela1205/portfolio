@@ -2,7 +2,7 @@ import React from 'react'
 import {ResumeItems} from '../../../constants/navItems.constant';
 function Experience() {
   return (
-    <section className='section'>
+    <section className='section' id='resume'>
       <div className="container">
         <h2>My Resume</h2>
 
