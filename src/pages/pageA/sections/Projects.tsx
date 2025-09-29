@@ -7,7 +7,7 @@ function Projects() {
       <div className="container" >
         {/* title  */}
 
-        <h2>Recent Projects</h2>
+        <h2 className='text-center mb-4'>Recent Projects</h2>
 
         {/* card wrapper  */}
 

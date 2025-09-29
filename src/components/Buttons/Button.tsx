@@ -7,6 +7,7 @@ export type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
   classes?: string;
 
   icon?:React.ReactNode;
+  
 };
 
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(

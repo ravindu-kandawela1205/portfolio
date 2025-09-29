@@ -6,8 +6,18 @@ import { BackgroundGradient } from '../../../components/ui/BackgroundGradient ';
 
 import { motion } from 'framer-motion';
 import { staggerContainer } from '../../../motion/animation';
+import ravindupdf from '../../../download/Ravindu-Kandawela.pdf';
 
 function Hero() {
+  const handleDownload = () => {
+    const link = document.createElement('a');
+    link.href = ravindupdf;
+    link.download = 'Ravindu-Kandawela.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <section className="py-28 lg:pt-40" id="home">
       <motion.div
@@ -105,11 +115,12 @@ function Hero() {
             transition={{ duration: 0.7, delay: 1 }}
           >
             <motion.div  whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-              <Button label="Download CV" classes="primary-btn" icon />
+              
+              <Button  label="Download CV" classes="primary-btn" icon onClick={handleDownload} />
             </motion.div>
 
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-              <Button label="Let's Collaborate" classes="secondary-btn" />
+              <Button label="Let's Collaborate" classes="secondary-btn"  />
             </motion.div>
           </motion.div>
         </motion.div>

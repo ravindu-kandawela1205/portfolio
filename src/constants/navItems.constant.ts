@@ -83,20 +83,15 @@ export const ResumeItems = [
     title: "Experience",
     list: [
       {
-        role: "Senior Frontend Developer",
-        label: "TechCorp",
-        time: "2022-Present",
+        role: "ICT Technician",
+        label: "Ceylon Electricity Board (CEB)",
+        time: "2023-2024",
       },
       {
-        label: "StartupXYZ",
-        role: "Frontend Developer",
-        time: "2020-2022",
-      },
-      {
-        label: "WebAgency",
-        role: "Junior Developer",
-        time: "2019-2020",
-      },
+        label: "mycompany",
+        role: "Software Developer",
+        time: "2024-2025",
+      }
     ],
   },
   {
@@ -104,14 +99,14 @@ export const ResumeItems = [
     title: "Education",
     list: [
       {
-        label: "University of California",
-        role: "Computer Science Degree",
-        time: "2019",
+        label: "Vocational Training Authority",
+        role: "ICT NVQ Level 4",
+        time: "2023-2024",
       },
       {
-        label: "Meta",
-        role: "React Developer Certification",
-        time: "2022",
+        label: "Technical College Of Galle",
+        role: "Software Developer (NVQ Level 5)",
+        time: "2024-2025",
       },
     ],
   },
@@ -148,16 +143,16 @@ export const contactItems = [
   {
     id: 1,
     label: "Email:",
-    link: "alexchen.dev@gmail.com",
+    link: "ravindukandawela@gmail.com",
   },
   {
     id: 2,
     label: "Phone:",
-    link: "+1 (415) 892-7643",
+    link: "+94714257207",
   },
   {
     id: 3,
     label: "Location:",
-    link: "San Francisco, CA",
+    link: "Polgaswatta, Henegama , Akuressa",
   },
 ];
